@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/index.css" />
+	<link rel="shortcut icon" href="./imagem/logo0.png" type="image/x-png" />
+	<title>Pritex</title>
+</head>
+
+<body>
+	<!-- Sidebar -->
+	<nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+		<a href="javascript:void(0)" onclick="w3_close()"
+			class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:3px 20px">
+			<i class="fa fa-remove"></i>
+		</a>
+
+		<div class="w3-bar-block w3-center">
+			<ul>
+				<li><a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Pure CSS</a>
+					<ul>
+						<li><a href="./controle.html" target="_blank"><span>Controle</span></a></li>
+					</ul>
+				</li>
+				<li><a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Templates</a>
+					<ul>
+						<li><a href="./login.html" target="_blank"><span>Tela de Login</span></a></li>
+					</ul>
+				</li>
+				<li><a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Projetos</a>
+
+					<ul>
+						<li><a href="http://euquezia.tk" target="_blank"><span>eu, Quézia</span></a></li>
+						<li><a href="http://site-pritex1.gq/" target="_blank"><span>Prirley Design</span></a></li>
+					</ul>
+				</li>
+				<li><a href="#rodape" target="_blank"
+						class="w3-bar-item w3-button w3-text-grey w3-hover-black">Contato</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div class="w3-content" style="max-width:1500px">
+
+		<div class="w3-opacity">
+			<span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+			<div class="w3-clear"></div>
+
+			<header class="w3-center w3-margin-bottom">
+				<img id="logo" src="./imagem/logo.png" alt="pritex">
+				<h1>Boas vindas</h1>
+				<h4><b>Obrigada por me visitar!<b></h4>
+			</header>
+		</div>
+		<main>
+			<section>
+				<h2> Objetivo desse site é apresentar meus projetos feitos em HTML5, CSS3, JavaScript, PHP, SQL e outras
+					tecnologias. Para ter acesso ao meu trabalho basta clicar no menu. Espero que curta!</h2>
+				<div id="box">
+					<center><img src="./imagem/pricilla.jpeg" alt="pricilla" width="200" height="200"></center>
+					<h3>Sobre mim</h3>
+					<p> Olá e boas vindas, meu nome é Pricilla de Souza Teixeira, conhecida como Pritex que é a junção
+						de Pricilla com Teixeira - ótima invenção né? Eu sou um iniciante em desenvolvimento web, então
+						atualmente estou trabalhando apenas em meus próprios projetos; meu ponto de partida é pegar uma
+						ideia e materializá-la para divulgá-la pelo mundo, e isso me dá uma grande sensação de
+						realização.</p>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<div id="rodape">
+				<p><b>Contato:<b></p>
+				<a id="email" href="mailto:cillatex1@gmail.com"><img src="./imagem/gmail.png"></a>
+				<a id="zap" href="https://api.whatsapp.com/send?l=pt&phone=5561992418933">
+					<img src="./imagem/whatsapp.png"></a>
+			</div>
+		</footer>
+		<script>
+
+			// Open and close sidebar
+			function w3_open() {
+				document.getElementById("mySidebar").style.width = "100%";
+				document.getElementById("mySidebar").style.display = "block";
+			}
+
+			function w3_close() {
+				document.getElementById("mySidebar").style.display = "none";
+			}
+		</script>
+</body>
+
+</html>

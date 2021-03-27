@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+  margin:0;
+  padding:0;
+  border:0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  background: linear-gradient(45deg,#DC143C,#FF9966,#DC143C );
+  background-repeat: no-repeat;
+  min-height:100vh;
+  min-width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+main.container{
+  background-color: white;
+  max-width: 350px;
+  min-height: 40vh;
+  padding: 2rem;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+main h2{
+  font-weight: 600;
+  margin-bottom:2rem;
+  position: relative;
+  color: #DC143C;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field{
+  position: relative;
+}
+.input-field:first-child{
+  margin-bottom: 1.5rem;
+}
+.input-field .underline::before{
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  bottom:-5px;
+  left:0;
+  background: rgba(0, 0, 0, 0.2);
+}
+.input-field .underline::after{
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom:-5px;
+    left:0;
+    background:linear-gradient(45deg, #9e2a2a, #e49b9b) ;
+    transform: scaleX(0);
+}
+.input-field input:focus ~ .underline::after{
+  transform: scaleX(1);
+}
+
+form .input-field input{
+  outline: none;
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.8)
+}
+.input-field input::placeholder{
+  color: rgba(0, 0, 0, 0.5)
+
+}
+
+form input[type="submit"] {
+  margin-top: 2rem;
+  padding: 0.4rem;
+  background: linear-gradient(45deg,#DC143C,#FF9966,#DC143C );
+  cursor: pointer;
+  color:white;
+  font-size: 0.9rem;
+  font-weight: 300;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+  letter-spacing: 0.5px;
+  background: linear-gradient(45deg,#DC143C,#FF9966);
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.footer span{
+color:rgba(0, 0, 0, 0.7);
+font-size: 0.8rem;
+text-align: center;
+}
+
+.footer .social-field{
+  padding: 0.4rem;
+  border-radius: 4px;
+  font-size:0.85rem;
+  width: 100%;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.footer .social-field a{
+  text-decoration: none;
+  color:white;
+}
+.footer .social-field a i {
+  margin: 0 0.5rem;
+  width: 15px;
+}
+.footer .social-field.facebook{
+  background: linear-gradient(to left, #0052b3, #04385f );
+}
+
+.footer .social-field.instagram{
+  background: linear-gradient(to left, #ff0569, #e92c00 );
+}

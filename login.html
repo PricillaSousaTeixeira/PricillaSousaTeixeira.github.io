@@ -1,0 +1,74 @@
+<?php
+session_start();
+?>
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link href="./css/login.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/d5eb4a6803.js" crossorigin="anonymous"></script>
+		<title>Login</title>
+
+    </head>
+    <body>
+   
+   
+	<main class="container">
+	 <h2>Pritex</h2>
+    
+        
+        <?php
+            if(isset($_SESSION['msg'])){
+                echo $_SESSION['msg'];
+                unset($_SESSION['msg']);
+            }
+            if(isset($_SESSION['msgcad'])){
+                echo $_SESSION['msgcad'];
+                unset($_SESSION['msgcad']);
+            }
+        ?>
+<!-- aqui -->
+
+        <form method="POST" action="valida.php">
+
+            <div class="input-field">
+                <input type="text" name ="usuario" id="usuario" placeholder="Usuário">
+                <div class="underline"></div>
+            </div>
+            <div class="input-field">
+                <input type="password" name ="senha" id="senha" placeholder="Senha"><br>
+                <div class="underline"></div>
+            </div>
+
+                <input type="submit" name = "btnLogin" value="Login">
+              
+        </form>
+
+        <div class="footer">
+            <span>Conectar pelas redes sociais?</span>
+
+            <div class="social-field facebook">
+                <a href="#">
+                <i class="fab fa-facebook-f"></i>
+                sign in with facebook
+            </a>
+            </div>
+
+            <div class="social-field instagram">
+                <a href="#">
+                <i class="fab fa-instagram"></i>
+                sign in with instagram
+            </a>
+
+            </div>
+        </div>
+    </div>
+
+
+        </main>
+
+    </body>
+    
+
+</html>

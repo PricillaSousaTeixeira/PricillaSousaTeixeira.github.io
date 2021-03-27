@@ -1,0 +1,405 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap');
+
+
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+border: 0;
+}
+body{
+background:linear-gradient(45deg, #8a86c3, #2d1c78);
+background-repeat: no-repeat, repeat;
+min-height: 100vh;
+min-width: 100vw;
+}
+section#main{
+display: flex;
+align-items: center;
+justify-items: center;
+flex-direction: column;
+width: 70%;
+}
+.conteiner {
+position: relative;
+}
+
+/*parte do controle onde se encotra os botoes de selec start*/
+.quadrado{
+background-color: #939393;
+height: 200px;
+width: 480px;
+margin-left:450px;
+margin-top: 200px;
+border-radius:80px;
+box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+/*circulo da direita*/
+.circulo{
+background-color: #939393;
+height: 220px;
+width: 220px;
+margin-left:400px;
+border-radius: 100%;
+margin-top:-200px;
+
+}
+/*circulo da esquerda*/
+.circulo1{
+background-color: #939393;
+height: 220px;
+width: 220px;
+margin-left:750px;
+margin-top: -220px;
+border-radius: 100%;
+
+}
+/**/
+.boxcirc{
+background-color:#8d8d8d;
+height: 120px;
+width: 120px;
+margin-left: 450px;
+margin-top: -170px;
+border-radius: 100%;
+box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2);
+
+/*box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);*/
+}
+/* botao cruz horizontal*/
+.boxbotao{
+background-color:#2e2c2d;
+height: 30px;
+width: 90px;
+border-radius: 10px;
+margin-left:465px ;
+margin-top:-75px;
+position: relative;
+}
+
+/*botao cruz vertical*/
+.boxbotao1{
+background-color:#2e2c2d;
+height: 30px;
+width: 90px;
+border-radius: 10px;
+margin-left:465px ;
+margin-top:-30px;
+position: relative;
+transform:rotate(-90deg);
+}
+
+/* circulo preto pequeno no cetro botoes da seta cima, baixo, esquerda, direita*/
+.boxcirc1{
+background-color:#2e2c2d;
+height: 20px;
+width: 20px;
+margin-left: 500px;
+margin-top: -25px;
+border-radius: 100%;
+position: relative;
+box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.4);
+}
+/*triangulos pequenos nos botoes de seta cima, baixo, esquerda, direita*/
+.triangulo{
+width: 0px;
+border-right: 10px solid transparent;
+border-left: 10px solid transparent;
+border-bottom:15px solid #3b3b3b;
+margin-left: 500px;
+margin-top:-50px;
+position: relative;
+box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+.triangulo:hover{
+background-color: #211f20;
+cursor: pointer;
+}
+/*triangulos pequenos nos botoes de seta cima, baixo, esquerda, direita*/
+.triangulo1{
+width: 0px;
+border-right: 10px solid transparent;
+border-left: 10px solid transparent;
+border-bottom:15px solid #3b3b3b;
+margin-left: 465px;
+margin-top:18px;
+transform: rotate(-90deg);
+position: relative;
+box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+.triangulo1:hover{
+background-color: #211f20;
+cursor: pointer;
+}
+/*triangulos pequenos nos botoes de seta cima, baixo, esquerda, direita*/
+.triangulo2{
+width: 0px;
+border-right: 10px solid transparent;
+border-left: 10px solid transparent;
+border-bottom:15px solid #3b3b3b;
+margin-left: 535px;
+margin-top:-15px;
+transform: rotate(90deg);
+position: relative;
+box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+.triangulo2:hover{
+background-color: #211f20;
+cursor: pointer;
+}
+/*triangulos pequenos nos botoes de seta cima, baixo, esquerda, direita*/
+.triangulo3{
+width: 0px;
+border-right: 10px solid transparent;
+border-left: 10px solid transparent;
+border-bottom:15px solid #3b3b3b;
+margin-left: 500px;
+margin-top:18px;
+transform: rotate(-180deg);
+position: relative;
+box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+.triangulo3:hover{
+background-color: #211f20;
+cursor: pointer;
+}
+/*circulo cor Medium Purple "violeta"*/
+
+.circulo2{
+background-color: #726778;
+height: 200px;
+width: 200px;
+margin-left: 765px;
+margin-top: -140px;
+border-radius: 100%;
+box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.4);
+
+}
+/*circulo branco dos botoes do eixo y e x do controle"*/
+
+.circulo3{
+background-color:#939393;
+height:40px;
+width:120px;
+margin-left: 780px;
+margin-top: -140px;
+border-radius: 90px;
+transform:rotate(-45deg);
+box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+/*circulo branco dos botoes do eixo B e A do controle*/
+.circulo4{
+background-color:#939393;
+height:40px;
+width:120px;
+margin-left: 830px;
+margin-top: -5px;
+border-radius: 90px;
+transform:rotate(-45deg);
+box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+/*circulo cor vioeta do eixo y ou x do controle*/
+.circulo5{
+background-color:#897eb8;
+height:40px;
+width:40px;
+margin-left: 848px;
+margin-top: -102px;
+border-radius: 100%;
+position: relative;
+box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+.circulo5:hover{
+background:#7B71A5;
+cursor: pointer;
+}
+/*circulo cor vioeta do eixo y ou x do controle*/
+.circulo6{
+background-color: #897eb8;
+height:40px;
+width:40px;
+margin-left: 792px;
+margin-top: 14px;
+border-radius: 100%;
+position: relative;
+box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+.circulo6:hover{
+background:#7B71A5;
+cursor: pointer;
+}
+/*circulo cor vioeta mais escuro do eixo B ou A do controle*/
+.circulo7{
+background-color:#452e7e;
+height:40px;
+width:40px;
+margin-left: 842px;
+margin-top: -5px;
+border-radius: 100%;
+position: relative;
+box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+.circulo7:hover{
+background:#3E2971;
+cursor: pointer;
+}
+/*circulo cor vioeta mais do do eixo B ou A do controle*/
+.circulo8{
+background-color:#452e7e;
+height:40px;
+width:40px;
+margin-left: 897px;
+margin-top: -95px;
+border-radius: 100%;
+position: relative;
+box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+.circulo8:hover{
+background:#3E2971;
+cursor: pointer;
+}
+/*circulo largo estreito da parte superior do controle*/
+.circulo9{
+background-color:#939393;
+height: 10px;
+width: 120px;
+margin-left: 750px;
+margin-top:-122px;
+border-radius: 90px;
+}
+/*circulo largo estreito da parte superior do controle*/
+.circulo10{
+background-color:#939393;
+height: 10px;
+width: 120px;
+margin-left: 490px;
+margin-top:-9px;
+border-radius: 90px;
+}
+
+/*botao select ou start do controle*/
+.boxbotao2{
+background-color:#2e2c2d;
+height:15px;
+width: 40px;
+margin-left: 690px;
+margin-top: 90px;
+border-radius: 90px;
+transform:rotate(130deg);
+position: relative;
+box-shadow: 1px 1px 0px 2px rgba(0, 0, 0, 0.8);
+}
+.boxbotao2:hover{
+background:#211f20;
+cursor: pointer;
+}
+/*botao select ou start do controle*/
+.boxbotao3{
+background-color:#2e2c2d;
+height:15px;
+width: 40px;
+margin-left: 610px;
+margin-top: -20px;
+border-radius: 90px;
+transform:rotate(130deg);
+background-position: relative;
+box-shadow: 1px 1px 0px 2px rgba(0, 0, 0, 0.8);
+}
+.boxbotao3:hover{
+background:#211f20;
+cursor: pointer;
+}
+/*quadradinho cinza mais escuro que a cor do controle, na parte do meio e superior.*/
+.quadrado1{
+height: 10px;
+width: 35px;
+margin-left: 660px;
+margin-top: -105px;
+position: relative;
+box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.1);
+}
+/* escrita super nintendo*/
+#letra1{
+color: #72727c;
+font-size: 120%;
+margin-left: 610px;
+margin-top: 10px;
+text-transform: uppercase;
+font-family: 'Open Sans Condensed', sans-serif;
+font-style: italic;
+letter-spacing: -0.4px;
+}
+/*escrita entertainmente system*/
+#letra2{
+font-family: arial;
+font-size: 56%;
+text-align: center;
+font-style: italic;
+letter-spacing: .1rem;
+padding:2px;
+width: 125px;
+color:#6b6b75;
+margin-top:0px;
+margin-left: 610px;
+
+}
+/* escrita select*/
+#letra3{
+color:#72727c;
+font-size: large;
+font-size: 80%;
+font-style:italic;
+margin-top: 70px;
+margin-left: 610px;
+font-family: Bernard MT Condensed;
+
+}
+/*escrita start*/
+#letra4{
+color:#72727c;
+font-size: large;
+font-size: 80%;
+font-style:italic;
+margin-top: -15px;
+margin-left: 700px;
+font-family: Bernard MT Condensed;
+
+}
+/*escrita y*/
+#letra5{
+font-size: large;
+font-size: 80%;
+color:white;
+margin-top: -5px;
+margin-left:800px;
+text-transform: uppercase;
+
+}
+/*escrita x*/
+#letra6{
+font-size: large;
+font-size: 80%;
+color:white;
+margin-top: -120px;
+margin-left:890px;
+text-transform: uppercase;
+}
+/*escrita B*/
+#letra7{
+font-size: large;
+font-size: 80%;
+color:white;
+margin-top: 125px;
+margin-left:850px;
+text-transform: uppercase;
+}
+/*escrita A*/
+#letra8{
+font-size: large;
+font-size: 80%;
+color:white;
+margin-top:-120px;
+margin-left:940px;
+text-transform: uppercase;
+}
