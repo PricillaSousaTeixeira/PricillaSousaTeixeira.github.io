@@ -118,13 +118,15 @@ padding:0px;
 section h2{
 font-size:20px;
 }
+section{
+  padding: 20px;
+}
 #box{
 width: 100%;
-padding:0;
 }
 #box p{
-margin-left:20px;
-margin-right:20px;
+margin-left:10px;
+margin-right:10px;
 }
 #rodape p{
 font-size:15px;
