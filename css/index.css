@@ -93,6 +93,7 @@ border-radius: 10%;
 #zap:hover{
 background: #363636;
 opacity: 0.7;
+padding: 15px;
 }
 
 #email{
@@ -103,8 +104,8 @@ border-radius: 10%;
 }
 #email:hover{
 background: #DC143C;
-opacity: 0.7;
-
+opacity: 0.8;
+padding: 15px;
 }
 @media only screen and (max-width:768px){
 section h2{
