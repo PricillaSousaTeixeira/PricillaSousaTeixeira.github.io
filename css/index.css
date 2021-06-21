@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 *{
-
 box-sizing: border-box;
 margin: 0;
 padding: 0;
@@ -21,13 +20,17 @@ display:block;
 a{
 text-decoration: none;
 }
+
+.l-section {
+transform: skewY(-2deg);
+}
 section{
 padding: 40px;
-background: linear-gradient(45deg,#DC143C,#FF9966,#DC143C );
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+background-image: linear-gradient(45deg, #DC143C,#e44459 );
+transform: skewY(2deg);
 }
 section h2{
-text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
 color:white;
 margin-bottom: 60px;
 text-align: justify;
@@ -57,7 +60,7 @@ text-align: center;
 #box img{
 float: center;
 padding: 10px;
-border-radius: 50%;
+border-radius: 10%;
 border-color: #DC143C;
 border-style: solid;
 animation-name: move;
@@ -81,27 +84,27 @@ font-size:18px;
 color: #363636;
 padding: 20px;
 }
-#zap{text-decoration: none;
-border-color: #363636;
-border-style: solid;
+#zap{
+text-decoration: none;
+background: #363636;
 padding: 10px;
-border-radius: 50%;
+border-radius: 10%;
 }
 #zap:hover{
-border-color: #DC143C;
-border-style: solid;
+background: #363636;
+opacity: 0.7;
 }
 
 #email{
 text-decoration: none;
-border-color: #DC143C;
-border-style: solid;
+background: #DC143C;
 padding: 10px;
-border-radius: 50%;
+border-radius: 10%;
 }
 #email:hover{
-border-color: #363636;
-border-style: solid;
+background: #DC143C;
+opacity: 0.7;
+
 }
 @media only screen and (max-width:768px){
 section h2{
